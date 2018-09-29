@@ -27,7 +27,6 @@ public class ClientTerminal implements Runnable {
                 connection.writeObject(messageToSend);
                 connection.flush();
             }
-
         } catch (IOException e) {
             System.out.println("Could not prepare object connection");
             System.out.println(e.getMessage());
